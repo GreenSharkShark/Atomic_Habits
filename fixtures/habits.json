@@ -1,0 +1,162 @@
+[
+    {
+        "model": "atomic_habits.habit",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "place": "Дом",
+            "time": "2023-09-22T12:00:00Z",
+            "action": "Занятия спортом",
+            "is_pleasant_habit": true,
+            "is_related_habit": false,
+            "periodicity": 3,
+            "award": "Подарочный сертификат",
+            "time_to_complete": 90,
+            "is_published": true
+        }
+    },
+    {
+        "model": "atomic_habits.habit",
+        "pk": 2,
+        "fields": {
+            "user": 1,
+            "place": "Офис",
+            "time": "2023-09-23T15:30:00Z",
+            "action": "Чтение",
+            "is_pleasant_habit": true,
+            "is_related_habit": false,
+            "periodicity": 7,
+            "award": "Книга",
+            "time_to_complete": 60,
+            "is_published": true
+        }
+    },
+    {
+        "model": "atomic_habits.habit",
+        "pk": 3,
+        "fields": {
+            "user": 1,
+            "place": "Тренажерный зал",
+            "time": "2023-09-23T17:00:00Z",
+            "action": "Тренировка",
+            "is_pleasant_habit": false,
+            "is_related_habit": true,
+            "periodicity": 2,
+            "award": "Банка с протеином",
+            "time_to_complete": 45,
+            "is_published": false
+        }
+    },
+    {
+        "model": "atomic_habits.habit",
+        "pk": 4,
+        "fields": {
+            "user": 1,
+            "place": "Дом",
+            "time": "2023-09-24T09:00:00Z",
+            "action": "Медитация",
+            "is_pleasant_habit": true,
+            "is_related_habit": false,
+            "periodicity": 4,
+            "award": "Свеча",
+            "time_to_complete": 20,
+            "is_published": true
+        }
+    },
+    {
+        "model": "atomic_habits.habit",
+        "pk": 5,
+        "fields": {
+            "user": 1,
+            "place": "Парк",
+            "time": "2023-09-24T14:30:00Z",
+            "action": "Прогулка",
+            "is_pleasant_habit": false,
+            "is_related_habit": true,
+            "periodicity": 5,
+            "award": "Свежий воздух",
+            "time_to_complete": 60,
+            "is_published": true
+        }
+    },
+    {
+        "model": "atomic_habits.habit",
+        "pk": 6,
+        "fields": {
+            "user": 1,
+            "place": "Библиотека",
+            "time": "2023-09-25T10:30:00Z",
+            "action": "Учеба",
+            "is_pleasant_habit": true,
+            "is_related_habit": false,
+            "periodicity": 7,
+            "award": "Знания",
+            "time_to_complete": 90,
+            "is_published": false
+        }
+    },
+    {
+        "model": "atomic_habits.habit",
+        "pk": 7,
+        "fields": {
+            "user": 1,
+            "place": "Работа",
+            "time": "2023-09-26T13:00:00Z",
+            "action": "Программирование",
+            "is_pleasant_habit": false,
+            "is_related_habit": true,
+            "periodicity": 1,
+            "award": "Кофе",
+            "time_to_complete": 120,
+            "is_published": true
+        }
+    },
+    {
+        "model": "atomic_habits.habit",
+        "pk": 8,
+        "fields": {
+            "user": 1,
+            "place": "Сад",
+            "time": "2023-09-26T15:00:00Z",
+            "action": "Посадка цветов",
+            "is_pleasant_habit": true,
+            "is_related_habit": false,
+            "periodicity": 3,
+            "award": "Красота",
+            "time_to_complete": 45,
+            "is_published": true
+        }
+    },
+    {
+        "model": "atomic_habits.habit",
+        "pk": 9,
+        "fields": {
+            "user": 1,
+            "place": "Студия йоги",
+            "time": "2023-09-27T18:30:00Z",
+            "action": "Йога",
+            "is_pleasant_habit": false,
+            "is_related_habit": true,
+            "periodicity": 6,
+            "award": "Коврик для йоги",
+            "time_to_complete": 60,
+            "is_published": false
+        }
+    },
+    {
+        "model": "atomic_habits.habit",
+        "pk": 10,
+        "fields": {
+            "user": 1,
+            "place": "Кухня",
+            "time": "2023-09-27T20:00:00Z",
+            "action": "Готовка ужина",
+            "is_pleasant_habit": true,
+            "is_related_habit": false,
+            "periodicity": 2,
+            "award": "Вкусный ужин",
+            "time_to_complete": 75,
+            "is_published": false
+        }
+    }
+]
