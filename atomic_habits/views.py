@@ -4,6 +4,7 @@ from atomic_habits.paginators import HabitPaginator
 from atomic_habits.permissions import IsOwner
 from atomic_habits.seriallizers import HabitsSerializer
 from rest_framework.permissions import IsAuthenticated
+from atomic_habits.tasks import create_periodic_task
 
 
 class HabitsViewSet(viewsets.ModelViewSet):
@@ -22,9 +23,10 @@ class HabitsViewSet(viewsets.ModelViewSet):
     def perform_create(self, serializer):
         """ Сохраняет текущего пользователя как создателя объекта """
 
-        new_habit = serializer.save()
+        new_habit: Habit = serializer.save()
         new_habit.user = self.request.user
         new_habit.save()
+        create_periodic_task.delay(new_habit.pk)
 
 
 class PublicHabitsListAPIView(generics.ListAPIView):

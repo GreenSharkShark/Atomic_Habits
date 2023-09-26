@@ -16,6 +16,7 @@ class User(AbstractUser):
     country = models.CharField(max_length=100, verbose_name='страна', **NULLABLE)
     is_active = models.BooleanField(default=False)
     rand_key = models.IntegerField(default=0, verbose_name='Ключ для верификации')
+    telegram_id = models.BigIntegerField(verbose_name='id пользователя в Telegram', **NULLABLE)
 
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS = []

@@ -6,7 +6,7 @@ NULlABLE = {'blank': True, 'null': True}
 
 
 class Habit(models.Model):
-    time = models.DateTimeField(verbose_name='время')
+    time = models.DateTimeField(verbose_name='время и дата старта')
     action = models.TextField(verbose_name='действие')
     place = models.CharField(max_length=250, verbose_name='место')
     award = models.CharField(max_length=250, verbose_name='награда', **NULlABLE)
