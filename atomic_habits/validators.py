@@ -2,7 +2,7 @@ from rest_framework.validators import ValidationError
 from atomic_habits.models import Habit
 
 
-class RelatedHabitAwardValidator:
+class HabitSerializerValidator:
 
     def __init__(self, data: dict):
         self.related_habit = data.get('related_habit')
