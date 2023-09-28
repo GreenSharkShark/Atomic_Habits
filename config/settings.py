@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'django_celery_beat',
+    'drf_yasg',
 
     'users',
     'atomic_habits',

@@ -17,8 +17,12 @@ class HabitsViewSet(viewsets.ModelViewSet):
 
     def get_queryset(self):
         """ При GET запросе возвращает список объектов создателем которых является текущий пользователь """
+        try:
+            queryset = Habit.objects.filter(user=self.request.user)
+        except TypeError:
+            queryset = None
 
-        return Habit.objects.filter(user=self.request.user)
+        return queryset
 
     def perform_create(self, serializer):
         """ Сохраняет текущего пользователя как создателя объекта """

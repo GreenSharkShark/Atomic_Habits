@@ -13,4 +13,4 @@ class IsOwnerOrReadOnly(BasePermission):
             return True
 
         # Разрешение записи разрешено только владельцу объекта
-        return bool(obj.owner == request.user)
+        return bool(obj.pk == request.user.pk)
