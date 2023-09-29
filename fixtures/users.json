@@ -1,0 +1,14 @@
+[
+  {
+    "model": "users.user",
+    "pk": 1,
+    "fields": {
+      "email": "testuser@example.com",
+      "avatar": "",
+      "phone": "",
+      "country": "",
+      "is_active": true,
+      "rand_key": 12345
+    }
+  }
+]
