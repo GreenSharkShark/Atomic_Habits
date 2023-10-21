@@ -1,6 +1,6 @@
-FROM python:3
+FROM python:3.11-alpine
 
-WORKDIR /code
+WORKDIR /app
 
 COPY ./pyproject.toml .
 

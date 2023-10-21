@@ -30,8 +30,8 @@ def create_periodic_task(habit_pk: int):
 
     PeriodicTask.objects.create(
         interval=schedule,
-        name=habit.action,
-        start_time=timezone.now(),
+        name=f"{habit.pk} {habit.action}",
+        start_time=habit.time,
         task='atomic_habits.tasks.send_telegram_notification',
         args=json.dumps([habit.user.telegram_id, notification_to_send])
     )
