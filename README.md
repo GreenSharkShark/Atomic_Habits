@@ -13,12 +13,12 @@ To install the project and its requirements, follow the steps below:
 2. Clone the repository:
 
    ```bash
-   https://github.com/GreenSharkShark/coursepaper_7.git
+   https://github.com/GreenSharkShark/Atomic_Habits.git
    
 3. Navigate to the project directory:
 
     ```bash
-      cd coursepaper_7
+      cd Atomic_Habits
     ```  
 4. Install the project dependencies using Poetry:
 
